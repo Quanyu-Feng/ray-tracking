@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>CS 4600 - Project 6</title>
-<script type="text/javascript" id="includedscript" src="ray-tarcking.js"></script>
+<script type="text/javascript" id="includedscript" src="script.js"></script>
 
 <script type="text/javascript">
 document.addEventListener("keydown", keyDownTextField, false);
@@ -13,7 +13,7 @@ function keyDownTextField(e) {
 		document.getElementById('includedscript').remove();
 		var head = document.getElementsByTagName('head')[0];
 		var script = document.createElement('script');
-		script.src= 'ray-tarcking.js';
+		script.src= 'script.js';
 		script.id = 'includedscript';
 		script.onload = function() {
 			primaryRT.init();
